@@ -3,18 +3,7 @@ const app = express();
 require("dotenv").config();
 const dbConnect = require("./config/dataBase");
 const PORT = process.env.PORT || 2089;
-<<<<<<< HEAD
-app.listen(PORT, () => {
-    console.log("We are running on " + PORT);
-})
-app.get("/", (req, res) => {
-    res.send("hello world");
-    console.log("biki");
-})
-dbConnect();
-=======
->>>>>>> main
-
+const cors=require("cors");
 app.use(express.json());
 app.use(cors());
 
