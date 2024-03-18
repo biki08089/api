@@ -7,6 +7,8 @@ const cors=require("cors");
 app.use(express.json());
 app.use(cors());
 
+console.log("fhdffddhdljhgkdfhgjfdkjghfdhghggdfghfghhghfghghfdhg")
+
 app.listen(PORT, () => {
   console.log("We are running on " + PORT);
 });
