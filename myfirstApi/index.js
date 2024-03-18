@@ -8,6 +8,7 @@ app.listen(PORT, () => {
 })
 app.get("/", (req, res) => {
     res.send("hello world");
+    console.log("biki");
 })
 dbConnect();
 
