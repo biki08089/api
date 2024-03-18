@@ -7,7 +7,11 @@ app.listen(PORT, () => {
     console.log("We are running on " + PORT);
 })
 app.get("/", (req, res) => {
-    res.send("hello world");
+    res.send({
+        "name":Bikash,
+        "des":"ghjgkjkhg",
+        "success":true,
+    });
 })
 dbConnect();
 
