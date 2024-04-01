@@ -16,109 +16,215 @@ app.get("/", (req, res) => {
   const aiData = [
     {
       id: 1,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Bias and Fairness in AI Algorithms",
+      description: "This topic explores the challenges of bias in AI algorithms and the importance of ensuring fairness and equity in AI systems. It examines how biases in training data, algorithmic design, and decision-making processes can lead to discriminatory outcomes, perpetuate social inequalities, and undermine trust in AI technologies. Ethical considerations include identifying and mitigating biases, promoting diversity and inclusion in AI development teams, and implementing transparency and accountability measures to ensure fair and equitable AI systems.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 2,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Transparency and Explainability in AI Decision-Making",
+      description: "This topic focuses on the ethical imperative of transparency and explainability in AI systems to enable users to understand how decisions are made and to hold AI systems accountable for their actions. It examines challenges such as the opacity of complex AI algorithms, black-box decision-making processes, and the lack of interpretability in AI systems. Ethical considerations include developing transparent AI models, providing explanations for AI decisions, and empowering users to challenge and understand AI outcomes.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 3,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Privacy and Data Protection in AI Systems",
+      description: "This topic explores the ethical implications of privacy and data protection in AI development, deployment, and use. It examines issues such as data collection, storage, sharing, and consent, as well as the risks of privacy violations, data breaches, and surveillance in AI systems. Ethical considerations include respecting individuals' privacy rights, implementing robust data protection measures, and ensuring informed consent and data governance frameworks to safeguard sensitive personal information in AI applications.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 4,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Accountability and Responsibility in AI Development",
+      description: "This topic focuses on the ethical principles of accountability and responsibility in AI development and deployment processes. It examines challenges such as the attribution of responsibility for AI decisions, the liability of AI developers and users, and the need for mechanisms to address harms and errors caused by AI systems. Ethical considerations include establishing clear lines of accountability, defining legal and ethical responsibilities for AI stakeholders, and implementing mechanisms for recourse and redress in cases of AI-related harm or injustice.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 5,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Ethical Use of AI in Autonomous Systems",
+      description: "This topic explores the ethical dilemmas and societal implications of deploying AI in autonomous systems, including autonomous vehicles, drones, and robots. It examines challenges such as safety, liability, and moral decision-making in AI-driven autonomous systems, as well as the potential impacts on human autonomy, privacy, and dignity. Ethical considerations include designing AI systems with built-in safety mechanisms, adhering to ethical principles such as the principle of beneficence and non-maleficence, and fostering public dialogue and engagement on the ethical implications of autonomous AI technologies.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 6,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Medical Imaging Analysis",
+      description: " This topic involves the application of AI algorithms to analyze medical images such as X-rays, MRI scans, and CT scans. AI can assist radiologists in detecting abnormalities, diagnosing diseases, and monitoring treatment progress with higher accuracy and efficiency. The use of AI in medical imaging analysis can help improve diagnostic accuracy, reduce interpretation errors, and expedite patient care.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 7,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Predictive Analytics for Patient Outcomes",
+      description: " This topic focuses on using AI-driven predictive analytics to forecast patient outcomes and identify individuals at risk of developing certain diseases or medical conditions. By analyzing electronic health records, genetic data, and lifestyle factors, AI models can predict patient outcomes, such as hospital readmissions, disease progression, or adverse events. This proactive approach enables healthcare providers to intervene early, personalize treatment plans, and improve patient outcomes.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 8,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Drug Discovery and Development",
+      description: " AI technologies are increasingly being used in pharmaceutical research and development to accelerate the discovery and optimization of new drugs and therapies. AI algorithms analyze biological data, chemical structures, and clinical trial data to identify potential drug candidates, predict their efficacy and safety profiles, and optimize drug design. AI-driven drug discovery can help expedite the development of novel treatments, reduce research and development costs, and address unmet medical needs more effectively.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 9,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Remote Patient Monitoring",
+      description: " This topic involves the use of AI-powered remote monitoring devices and wearable sensors to track patients' health metrics and vital signs outside of traditional clinical settings. AI algorithms analyze real-time data streams, such as heart rate, blood pressure, and activity levels, to detect changes in health status and alert healthcare providers to potential issues. Remote patient monitoring using AI enables early intervention, improves patient engagement, and facilitates personalized care delivery, particularly for individuals with chronic conditions or those requiring post-acute care.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 10,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Personalized Medicine and Treatment Planning",
+      description: " This topic explores the use of AI-driven personalized medicine approaches to tailor treatment plans and interventions to individual patients' genetic, molecular, and clinical profiles. AI algorithms analyze patient data, including genomic information, biomarkers, and treatment responses, to identify optimal treatment strategies and predict patient outcomes. Personalized medicine powered by AI enables precision diagnostics, targeted therapies, and individualized care pathways, leading to improved treatment efficacy, fewer adverse effects, and better patient outcomes.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 11,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Autonomous Vehicle Perception and Decision-Making",
+      description: " This topic focuses on the development of AI algorithms for perception and decision-making in autonomous vehicles. It covers techniques such as computer vision, sensor fusion, and deep learning to enable vehicles to perceive their environment, detect objects, and make real-time decisions to navigate safely and efficiently.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 12,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Safety and Reliability in Autonomous Driving Systems",
+      description: " This topic explores the challenges and approaches to ensuring the safety and reliability of autonomous driving systems. It addresses issues such as robustness to adverse conditions, validation and verification of AI algorithms, fail-safe mechanisms, and risk assessment methodologies to mitigate the potential hazards associated with autonomous vehicles.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 13,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Regulatory and Legal Frameworks for Autonomous Vehicles",
+      description: " This topic examines the regulatory and legal considerations surrounding the deployment and operation of autonomous vehicles. It covers topics such as liability, insurance, licensing, and compliance with existing traffic laws and regulations, as well as the need for new legislation and standards to address the unique challenges posed by autonomous driving technologies.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 14,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Ethical Dilemmas in Autonomous Vehicle Decision-Making",
+      description: " This topic explores the ethical dilemmas faced by autonomous vehicles when making critical decisions in complex scenarios. It discusses issues such as moral reasoning, prioritization of human safety, and trade-offs between different ethical principles, as well as societal expectations and cultural differences in ethical norms regarding autonomous driving behavior.",
+      image: "",
+      tag: "EthicalUses"
     },
     {
       id: 15,
-      name: "bikash",
-      text: "Bikash is a KanaBaya",
-      image:
-        "https://res.cloudinary.com/dd8zpyf5j/image/upload/v1700921587/samples/man-portrait.jpg",
+      title: "Integration of Autonomous Vehicles into Urban Mobility Systems",
+      description: " This topic focuses on the integration of autonomous vehicles into existing urban mobility systems, including public transportation networks, ride-sharing services, and smart city infrastructure. It examines the potential benefits of autonomous mobility, such as reduced traffic congestion, improved accessibility, and enhanced transportation equity, as well as challenges related to infrastructure adaptation, public acceptance, and socioeconomic impacts.",
+      image: "",
+      tag: "EthicalUses"
     },
+    {
+      id: 16,
+      title: "Algorithmic Trading and High-Frequency Trading",
+      description: " This topic explores the use of AI algorithms in algorithmic trading and high-frequency trading (HFT) to analyze market data, execute trades, and manage portfolios at high speeds and frequencies. AI-driven trading systems leverage machine learning, natural language processing, and predictive analytics to identify market trends, execute buy or sell orders, and optimize trading strategies, leading to improved trading performance and risk management.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 17,
+      title: "Fraud Detection and Prevention",
+      description: " This topic focuses on the application of AI techniques such as machine learning and anomaly detection to detect and prevent fraudulent activities in financial transactions and operations. AI-driven fraud detection systems analyze large volumes of transactional data, identify suspicious patterns or behaviors, and flag potentially fraudulent activities in real time, enabling financial institutions to mitigate risks, protect assets, and safeguard customer trust.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 18,
+      title: "Credit Scoring and Risk Assessment",
+      description: " This topic examines the use of AI-based credit scoring models and risk assessment tools to evaluate borrowers' creditworthiness and assess the likelihood of default or delinquency. AI algorithms analyze diverse data sources, including financial history, credit reports, and alternative data sources, to generate predictive credit scores and risk profiles, enabling lenders to make informed lending decisions, manage credit risk, and enhance loan portfolio performance.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 19,
+      title: "Personalized Financial Advice and Wealth Management",
+      description: " This topic explores the use of AI-powered robo-advisors and digital wealth management platforms to deliver personalized financial advice and investment strategies to individual investors. AI algorithms analyze investors' financial goals, risk tolerance, and market preferences to recommend diversified investment portfolios, optimize asset allocations, and automate portfolio rebalancing, providing cost-effective and accessible wealth management solutions.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 20,
+      title: "Compliance and Regulatory Reporting",
+      description: " This topic focuses on the role of AI technologies in automating compliance processes and regulatory reporting requirements in the financial industry. AI-driven compliance solutions leverage natural language processing, pattern recognition, and data analytics to interpret regulatory guidelines, monitor transactions for compliance violations, and generate accurate and timely regulatory reports, helping financial institutions adhere to regulatory standards, mitigate compliance risks, and streamline regulatory compliance processes.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 21,
+      title: "Climate Modeling and Prediction",
+      description: " This topic involves the use of AI and machine learning techniques to improve climate modeling and prediction. AI algorithms analyze complex climate data, such as temperature, precipitation, and atmospheric dynamics, to generate more accurate forecasts of future climate patterns and trends. Enhanced climate prediction capabilities enable policymakers, researchers, and stakeholders to better understand climate change impacts, assess risks, and develop effective mitigation and adaptation strategies.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 22,
+      title: "Renewable Energy Optimization",
+      description: " This topic focuses on leveraging AI technologies to optimize the integration and management of renewable energy sources, such as solar, wind, and hydroelectric power, into the energy grid. AI algorithms analyze data on energy production, demand, and storage to optimize the operation of renewable energy systems, improve energy efficiency, and maximize renewable energy utilization. By facilitating the transition to clean and sustainable energy sources, AI contributes to reducing greenhouse gas emissions and mitigating climate change.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 23,
+      title: "Climate Monitoring and Adaptation",
+      description: " This topic explores the use of AI-powered monitoring systems to track environmental changes, assess climate impacts, and support climate adaptation efforts. AI algorithms analyze satellite imagery, sensor data, and other environmental datasets to monitor changes in land use, biodiversity, and ecosystem health. By providing real-time insights into environmental trends and vulnerabilities, AI helps policymakers and communities make informed decisions and implement adaptive measures to mitigate the effects of climate change.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 24,
+      title: "Natural Disaster Prediction and Response",
+      description: "This topic involves the application of AI techniques for predicting and mitigating the impacts of natural disasters, such as hurricanes, wildfires, and floods, exacerbated by climate change. AI algorithms analyze geospatial data, weather patterns, and historical disaster records to forecast the likelihood and severity of extreme events, enabling early warning systems and emergency preparedness efforts. AI-driven disaster response systems facilitate rapid deployment of resources, coordination of rescue operations, and recovery efforts in affected areas, reducing human casualties and property damage.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 25,
+      title: "Carbon Emission Reduction and Climate Policy",
+      description: " This topic examines the role of AI in developing innovative solutions for reducing carbon emissions and informing climate policy decisions. AI-powered tools analyze data on energy consumption, transportation patterns, and industrial processes to identify opportunities for emissions reduction and optimize resource allocation. Additionally, AI-enabled climate models simulate the potential impacts of different policy interventions, helping policymakers evaluate the effectiveness of mitigation strategies and prioritize actions to achieve climate goals.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 26,
+      title: "Personalized Learning and Adaptive Education",
+      description: " This topic explores the use of AI technologies to personalize learning experiences and adapt educational content to individual students' needs, preferences, and learning styles. AI algorithms analyze students' performance data, learning progress, and cognitive profiles to deliver personalized recommendations, adaptive learning pathways, and targeted interventions, enhancing engagement, mastery, and retention of educational concepts.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 27,
+      title: "Intelligent Tutoring Systems",
+      description: " This topic focuses on the development of AI-driven intelligent tutoring systems (ITS) that provide individualized instruction, feedback, and support to students in various subjects and domains. ITS leverage machine learning, natural language processing, and educational data mining techniques to simulate human tutoring interactions, diagnose students' learning difficulties, and scaffold learning activities, fostering deeper understanding and mastery of academic content.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 28,
+      title: "Automated Grading and Assessment",
+      description: " This topic examines the application of AI technologies for automating grading and assessment processes in education. AI algorithms analyze students' written responses, quizzes, and assignments, using natural language processing and machine learning techniques to assess comprehension, provide feedback, and evaluate learning outcomes accurately and efficiently. Automated grading systems save educators time, enable timely feedback, and support formative assessment practices.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 29,
+      title: "Educational Data Analytics and Predictive Modeling",
+      description: " This topic explores the use of AI-driven educational data analytics and predictive modeling to analyze large-scale educational data sets and derive actionable insights for improving teaching and learning outcomes. AI algorithms analyze student performance data, demographic information, and learning behaviors to identify patterns, predict academic success, and inform instructional decision-making, enabling educators to tailor interventions and support strategies to students' needs proactively.",
+      image: "",
+      tag: "EthicalUses"
+    },
+    {
+      id: 30,
+      title: "Virtual Teaching Assistants and Chatbots",
+      description: " This topic examines the role of AI-powered virtual teaching assistants and chatbots in providing on-demand support, information, and guidance to students and educators. Virtual assistants leverage natural language processing and conversational AI techniques to answer questions, provide explanations, and assist with administrative tasks, enhancing access to educational resources, fostering self-directed learning, and promoting teacher-student interactions in digital learning environments.",
+      image: "",
+      tag: "EthicalUses"
+    }
+
   ];
   res.json(aiData);
 });
