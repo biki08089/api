@@ -12,7 +12,7 @@ console.log("fhdffddhdljhgkdfhgjfdkjghfdhghggdfghfghhghfghghfdhg")
 app.listen(PORT, () => {
   console.log("We are running on " + PORT);
 });
-app.get("/", (req, res) => {
+app.get("/data", (req, res) => {
   const aiData = [
     {
       id: 1,
