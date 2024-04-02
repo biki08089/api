@@ -12,7 +12,7 @@ console.log("fhdffddhdljhgkdfhgjfdkjghfdhghggdfghfghhghfghghfdhg");
 app.listen(PORT, () => {
   console.log("We are running on " + PORT);
 });
-app.get("/", (req, res) => {
+app.get("/page=1", (req, res) => {
   const aiData = [
     {
       id: 1,
@@ -94,6 +94,13 @@ app.get("/", (req, res) => {
       image: "",
       tag: "health",
     },
+ 
+  ];
+  res.json(aiData);
+});
+
+app.get("/page=2",()=>{
+  const aiData=[
     {
       id: 11,
       title: "Autonomous Vehicle Perception and Decision-Making",
@@ -174,6 +181,13 @@ app.get("/", (req, res) => {
       image: "",
       tag: "trading",
     },
+
+  ]
+  res.json(aiData);
+});
+
+app.get("/page=3",()=>{
+  const aiData=[
     {
       id: 21,
       title: "Climate Modeling and Prediction",
@@ -256,7 +270,7 @@ app.get("/", (req, res) => {
     },
   ];
   res.json(aiData);
-});
+})
 
 app.get("/ethicaluse", (req, res) => {
   const aiData = [
