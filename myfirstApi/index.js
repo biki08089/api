@@ -94,13 +94,12 @@ app.get("/page=1", (req, res) => {
       image: "",
       tag: "health",
     },
- 
   ];
   res.json(aiData);
 });
 
-app.get("/page=2",()=>{
-  const aiData=[
+app.get("/page=2", (req, res) => {
+  const aiData = [
     {
       id: 11,
       title: "Autonomous Vehicle Perception and Decision-Making",
@@ -181,13 +180,12 @@ app.get("/page=2",()=>{
       image: "",
       tag: "trading",
     },
-
-  ]
+  ];
   res.json(aiData);
 });
 
-app.get("/page=3",()=>{
-  const aiData=[
+app.get("/page=3", (req, res) => {
+  const aiData = [
     {
       id: 21,
       title: "Climate Modeling and Prediction",
@@ -270,7 +268,7 @@ app.get("/page=3",()=>{
     },
   ];
   res.json(aiData);
-})
+});
 
 app.get("/ethicaluse", (req, res) => {
   const aiData = [
