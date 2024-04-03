@@ -15,6 +15,10 @@ app.listen(PORT, () => {
 app.get("/page=1", (req, res) => {
   const aiData = [
     {
+      page:1,
+      totalpages:3,
+    },
+    {
       id: 1,
       title: "Bias and Fairness in AI Algorithms",
       description:
@@ -100,6 +104,10 @@ app.get("/page=1", (req, res) => {
 
 app.get("/page=2", (req, res) => {
   const aiData = [
+    { 
+      page:2,
+      totalpages:3,
+    },
     {
       id: 11,
       title: "Autonomous Vehicle Perception and Decision-Making",
@@ -187,6 +195,10 @@ app.get("/page=2", (req, res) => {
 app.get("/page=3", (req, res) => {
   const aiData = [
     {
+      page:3,
+      totalpages:3,
+    },
+    {
       id: 21,
       title: "Climate Modeling and Prediction",
       description:
@@ -272,6 +284,10 @@ app.get("/page=3", (req, res) => {
 
 app.get("/ethicaluse", (req, res) => {
   const aiData = [
+  {
+    page:1,
+    totalpages:1,
+  },
     {
       id: 1,
       title: "Bias and Fairness in AI Algorithms",
@@ -318,6 +334,10 @@ app.get("/ethicaluse", (req, res) => {
 app.get("/health", (req, res) => {
   const aiData = [
     {
+      page:1,
+      totalpages:1,
+    },
+    {
       id: 6,
       title: "Medical Imaging Analysis",
       description:
@@ -362,6 +382,10 @@ app.get("/health", (req, res) => {
 });
 app.get("/autonomous", (req, res) => {
   const aiData = [
+    {
+      page:1,
+      totalpages:1,
+    },
     {
       id: 11,
       title: "Autonomous Vehicle Perception and Decision-Making",
@@ -408,6 +432,10 @@ app.get("/autonomous", (req, res) => {
 app.get("/trading", (req, res) => {
   const aiData = [
     {
+      page:1,
+      totalpages:1,
+    },
+    {
       id: 16,
       title: "Algorithmic Trading and High-Frequency Trading",
       description:
@@ -453,6 +481,10 @@ app.get("/trading", (req, res) => {
 app.get("/climate", (req, res) => {
   const aiData = [
     {
+      page:1,
+      totalpages:1,
+    },
+    {
       id: 21,
       title: "Climate Modeling and Prediction",
       description:
@@ -497,6 +529,10 @@ app.get("/climate", (req, res) => {
 });
 app.get("/education", (req, res) => {
   const aiData = [
+    {
+      page:1,
+      totalpages:1,
+    },
     {
       id: 26,
       title: "Personalized Learning and Adaptive Education",
