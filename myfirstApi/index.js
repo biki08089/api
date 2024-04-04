@@ -285,7 +285,7 @@ app.get("/page=3", (req, res) => {
 app.get("/ethicaluse", (req, res) => {
   const aiData = {
     page: 1,
-    totalpages: 3,
+    totalpages: 1,
     blogs: [
       {
         id: 1,
@@ -334,7 +334,7 @@ app.get("/ethicaluse", (req, res) => {
 app.get("/health", (req, res) => {
   const aiData = {
     page: 1,
-    totalpages: 3,
+    totalpages: 1,
     blogs: [
       {
         id: 6,
@@ -383,7 +383,7 @@ app.get("/health", (req, res) => {
 app.get("/autonomous", (req, res) => {
   const aiData = {
     page: 1,
-    totalpages: 3,
+    totalpages: 1,
     blogs: [
       {
         id: 11,
@@ -432,7 +432,7 @@ app.get("/autonomous", (req, res) => {
 app.get("/trading", (req, res) => {
   const aiData = {
     page: 1,
-    totalpages: 3,
+    totalpages:1,
     blogs: [
       {
         id: 16,
@@ -481,7 +481,7 @@ app.get("/trading", (req, res) => {
 app.get("/climate", (req, res) => {
   const aiData = {
     page: 1,
-    totalpages: 3,
+    totalpages: 1,
     blogs: [
       {
         id: 21,
@@ -530,7 +530,7 @@ app.get("/climate", (req, res) => {
 app.get("/education", (req, res) => {
   const aiData = {
     page: 1,
-    totalpages: 3,
+    totalpages: 1,
     blogs: [
       {
         id: 27,
