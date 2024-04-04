@@ -533,6 +533,14 @@ app.get("/education", (req, res) => {
     totalpages: 1,
     blogs: [
       {
+        id: 26,
+        title: "Personalized Learning and Adaptive Education",
+        description:
+          " This topic explores the use of AI technologies to personalize learning experiences and adapt educational content to individual students' needs, preferences, and learning styles. AI algorithms analyze students' performance data, learning progress, and cognitive profiles to deliver personalized recommendations, adaptive learning pathways, and targeted interventions, enhancing engagement, mastery, and retention of educational concepts.",
+        image: "https://res.cloudinary.com/dnw1ttr02/image/upload/v1712230076/FutureAI/Education/icuagpft94ztgjc2bqj7.jpg",
+        tag: "education",
+      },
+      {
         id: 27,
         title: "Intelligent Tutoring Systems",
         description:
