@@ -104,7 +104,7 @@ app.get("/page=1", (req, res) => {
 
 app.get("/page=2", (req, res) => {
   const aiData = {
-    page: 1,
+    page: 2,
     totalpages: 3,
     blogs: [
       {
@@ -194,7 +194,7 @@ app.get("/page=2", (req, res) => {
 
 app.get("/page=3", (req, res) => {
   const aiData = {
-    page: 1,
+    page: 3,
     totalpages: 3,
     blogs: [
       {
