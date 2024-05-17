@@ -18,7 +18,7 @@ app.get("/page=1", (req, res) => {
     totalpages: 3,
     blogs: [
       {
-        id: 1,
+        id: 1, 
         title: "Bias and Fairness in AI Algorithms",
         description:
           "This topic explores the challenges of bias in AI algorithms and the importance of ensuring fairness and equity in AI systems. It examines how biases in training data, algorithmic design, and decision-making processes can lead to discriminatory outcomes, perpetuate social inequalities, and undermine trust in AI technologies. Ethical considerations include identifying and mitigating biases, promoting diversity and inclusion in AI development teams, and implementing transparency and accountability measures to ensure fair and equitable AI systems.",
